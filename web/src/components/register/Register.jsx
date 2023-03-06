@@ -3,7 +3,6 @@ import axios from "axios";
 import "./style.css";
 import { NavLink, useNavigate } from "react-router-dom";
 
-
 let baseURL = "";
 if (window.location.href.split(":")[0] === "http") {
   baseURL = "http://localhost:5001";
@@ -36,8 +35,8 @@ const Register = () => {
         })
         .catch((err) => {
           // console.log(err.message);
-          if(err.message === "Request failed with status code 400"){
-            alert("This Email already Exist")
+          if (err.message === "Request failed with status code 400") {
+            alert("This Email already Exist");
           }
         });
       // console.log(gender);
@@ -57,8 +56,10 @@ const Register = () => {
             setName(e.target.value);
           }}
           placeholder="Enter Your Name"
+          name="name"
         />
         <input
+          name="email"
           type="email"
           className="form-control"
           placeholder="Enter Your Email"

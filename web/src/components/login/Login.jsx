@@ -53,6 +53,7 @@ const Login = () => {
           onChange={(e) => {
             setEmail(e.target.value);
           }}
+          name="email"
           required
         />
         <input
