@@ -1,0 +1,34 @@
+#login-main {
+  background-color: #535fe6;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  flex-direction: column;
+}
+#login-main form {
+  height: 350px;
+  width: 350px;
+  background-color: #1c1e21;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 25px;
+  padding: 0px 10px 0px 10px;
+  overflow: -moz-hidden-unscrollable;
+}
+.login h4{
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 500px) {
+  #login-main form {
+    height: 45vh;
+    width: 85vw;
+    background-color: #1c1e21;
+    /* margin-left: 1.6rem; */
+  }
+}

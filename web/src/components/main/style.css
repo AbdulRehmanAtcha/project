@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+#todo-main {
+  background-color: #535fe6;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  min-height: 100vh;
+  min-width: 100vw; 
+}
+.head form{
+  padding: 10px;
+  margin-top: 8rem;
+  width: 100vw;
+  height: 70px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head input{
+  width: 400px;
+  height: 35px;
+  padding: 5px;
+}
+
+#sub-button{
+  background-color: black;
+    height: 34px;
+    border: none;
+    margin-left: 16px;
+    width: 100px;
+    color: aliceblue;
+}
+.items{
+  width: 90vw;
+  height: auto;
+  margin: auto auto;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  row-gap: 8px;
+  align-items: center;
+}
+.items:last-child{
+  margin-bottom: 20px;
+}
+.single-item{
+  width: 30%;
+  background-color: #1c1e21;
+  height: auto;
+  border-radius: 4px;
+  color: aliceblue;
+  padding: 6px;
+}
+.buttons{
+  display: flex;
+  column-gap: 10px;
+}
+.buttons button{
+  width: 80px;
+  height: 40px;
+  /* outline: none !important; */
+}
+.modal-body{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    .main-box {
+    height: 65vh;
+    width: 99vw;
+    background-color: #1c1e21;
+  }
+
+
+}
+@media screen and (max-width: 1000px) {
+  .head input{
+    width: 80%;
+    height: 35px;
+  }
+  .single-item{
+    width: 100%;
+    background-color: #1c1e21;
+    min-height: 120px;
+    border-radius: 4px;
+  }
+
+}
+
+
