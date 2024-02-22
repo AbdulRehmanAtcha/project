@@ -11,7 +11,7 @@ const app = express();
 const port = process.env.PORT || 5001;
 const MongoDBURI =
   process.env.MongoDBURI ||
-  "mongodb+srv://abdul:abdulpassword@cluster0.zcczzqa.mongodb.net/test?retryWrites=true&w=majority";
+  "mongodb+srv://abdulrehman1239091:abdul123@cluster0.lux4z9y.mongodb.net/test?retryWrites=true&w=majority";
 
 app.use(
   cors({
